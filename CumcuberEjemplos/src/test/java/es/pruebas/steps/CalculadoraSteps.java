@@ -27,8 +27,8 @@ private Calculadora miCalculadora;
 	}
 
 	@Then("^El resultado final es (\\d+)$")
-	public void testResultado(int arg1) throws Throwable {
+	public void testResultado(int resultadoEsperado) throws Throwable {
 	    System.out.println("Resultado  "+operando1+" + "+operando2+" = "+resultadoSuma);
-		Assert.assertEquals(arg1, resultadoSuma);
+		Assert.assertEquals(resultadoEsperado, resultadoSuma);
 	}
 }
